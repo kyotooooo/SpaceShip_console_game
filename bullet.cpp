@@ -1,5 +1,5 @@
 #include "bullet.h"
-#include "asteroids.h" // ¬ключаем asteroids.h здесь
+#include "asteroids.h" 
 
 std::vector<Bullet> bullets;
 
