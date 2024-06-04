@@ -22,7 +22,6 @@ void Bullet::updateBullets(Map& m) {
         if (bullets[i].isActive) {
             m.getMap()[bullets[i].coordY][bullets[i].coordX] = '*';
             --bullets[i].coordY;
-            
         } 
         if (bullets[i].coordY < 1) {
             bullets[i].isActive = false;
