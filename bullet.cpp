@@ -23,16 +23,11 @@ void Bullet::updateBullets(Map& m) {
             m.getMap()[bullets[i].coordY][bullets[i].coordX] = '*';
             --bullets[i].coordY;
             
-        }
-
-       
-       
+        } 
         if (bullets[i].coordY < 1) {
             bullets[i].isActive = false;
             bullets.erase(bullets.begin() + i);
             --i;
-        }
-        
-      
+        }  
     }
 }
